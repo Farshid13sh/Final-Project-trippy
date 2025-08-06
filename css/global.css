@@ -1,0 +1,105 @@
+/*Global Styles */
+:root{
+    --maingreen:#00bf6d;
+    --beige: #eaeaea;
+    --grey: #1e1e1e;
+    --lightgreen: #80e8bb;
+    --primaryfont: "Oswald", "Bebas Neue", sans-serif;
+    --secondaryfont:"Open Sans", "Roboto", sans-serif;
+}
+
+/* nav bar */
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 4rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: rgb(255, 255, 255); /*transparent bg*/
+    transition: background-color 0.6s ease, box-shadow 0.6s ease, color 0.6s ease;
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+/*hiding h1*/
+.site-header_logo h1 {
+    position: absolute; /* Remove it from the document flow */
+    width: 1px; /* Minimize its size */
+    height: 1px; /* Minimize its size */
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0); /* Clip the element */
+    white-space: nowrap; /* Prevent wrapping */
+}
+/*logo*/
+.site-header_logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 1;
+}
+
+.site-header_logo img{
+    height: 4em; 
+    display: block;
+}
+
+/*Links in the center*/
+.site-header_nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.site-header_nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    gap: 3rem;
+    margin: 0;
+    padding: 0;
+}
+
+.site-header_nav a {
+    position: relative;
+    text-decoration: none;
+    color: #000000; /* Text color */
+    font-weight:500;
+    transition: color 0.3s ease;
+}
+
+.site-header_nav a:hover {
+    color: var(--maingreen); /* Hover effect */
+    font-weight: 550;
+}
+
+.site-header_nav a::after { /*nav bar unerline*/
+    content: ''; /*underline*/
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0; /* Start with no width */
+    height: 2px;
+    background-color: var(--maingreen);
+    transition: width 0.3s ease;
+}
+
+.site-header_nav a:hover::after {
+    width: 100%; /*expand the underline on hover*/
+}
+
+/*body*/
+body{
+    font-family: var(--secondaryfont);
+    line-height: 1.5;
+    color: #1e1e1e;
+    letter-spacing: 0.02rem;
+}
+
+h1 {
+  font-size: clamp(1.6rem, 2vw, 2rem);
+  font-weight: 500;
+  font-family: var(--primaryfont);
+  color: var(--green);
+}
