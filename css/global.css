@@ -95,6 +95,15 @@ body{
     line-height: 1.5;
     color: #1e1e1e;
     letter-spacing: 0.02rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Main content */
+main {
+    flex: 1;
+    margin-top: 120px; /* Account for fixed header */
 }
 
 h1 {
@@ -102,4 +111,34 @@ h1 {
   font-weight: 500;
   font-family: var(--primaryfont);
   color: var(--green);
+}
+
+/* Footer Styles */
+.site-footer {
+    background-color: var(--grey);
+    padding: 2rem 0;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.site-footer .icons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.site-footer .icons a {
+    color: white;
+    font-size: 1.5rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+}
+
+.site-footer .icons a:hover {
+    color: var(--maingreen);
+    transform: translateY(-2px);
+}
+
+.site-footer .icons i {
+    display: inline-block;
 }
