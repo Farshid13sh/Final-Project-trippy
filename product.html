@@ -7,12 +7,13 @@
     <title>Trippy Co.</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="product.css">
     <!--google-font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/1d9475f72d.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
 <body>
@@ -21,6 +22,7 @@
         <!--brand logo-->
         <div class="site-header_logo">
             <h1>Tirppy</h1>
+
             <a href="index.html"><img src="images/Trippy-logo-green.png" alt="soma and soil logo"></a>
         </div>
         <!--pages link -->
@@ -33,26 +35,122 @@
         </nav>
     </header>
 
-    <section class="product-nav">
+    <section class="product-nav fixed top-20 left-1/2 transform -translate-x-1/2 z-10 bg-white shadow-lg rounded-full px-8 py-3 mt-4">
        <nav class="product-lists">
-            <ul>
-                 <li><a href=""> T-shirts</a></li>
-                 <li><a href="">Pants</a></li>
-                 <li><a href="">Hats</a></li>
-                 <li><a href="">Shoes</a></li>
+            <ul class="flex space-x-8 items-center justify-center">
+                 <li><a href="#T-shirts" class="text-gray-700 hover:text-green-500 font-medium transition-colors duration-300 px-4 py-2 rounded-full hover:bg-green-50">T-shirts</a></li>
+                 <li><a href="#pants" class="text-gray-700 hover:text-green-500 font-medium transition-colors duration-300 px-4 py-2 rounded-full hover:bg-green-50">Pants</a></li>
+                 <li><a href="#hats" class="text-gray-700 hover:text-green-500 font-medium transition-colors duration-300 px-4 py-2 rounded-full hover:bg-green-50">Hats</a></li>
+                 <li><a href="#shoes" class="text-gray-700 hover:text-green-500 font-medium transition-colors duration-300 px-4 py-2 rounded-full hover:bg-green-50">Shoes</a></li>
             </ul>
         </nav>
     </section>
 
-    <main>
-     
-    
+    <main class="pt-40">
+        <h2 class="items-name T-shirts" id="T-shirts">T-Shirts</h2>
+        <div class="product-grid">
+            <div class="card">
+                <div class="image">
+                    <img src="images/shirt1.jpg" class="w-full h-full object-cover object-center rounded">
+                </div>
+                <span class="title">Trippy Tee #1</span>
+                <span class="price">$35</span>
+            </div>
+            <div class="card">
+                <div class="image"><span class="text">Street Style Shirt</span></div>
+                <span class="title">Urban Trippy</span>
+                <span class="price">$40</span>
+            </div>
+            <div class="card">
+                <div class="image"><span class="text">Colorful Design</span></div>
+                <span class="title">Rainbow Flow</span>
+                <span class="price">$38</span>
+            </div>
+            <div class="card">
+                <div class="image"><span class="text">Bold Graphics</span></div>
+                <span class="title">Neon Dreams</span>
+                <span class="price">$42</span>
+            </div>
+        </div>
+
+        <h2 class="items-name" id="pants">Pants</h2>
+        <div class="product-grid">
+            <div class="card">
+                <div class="image"><span class="text">Trippy Joggers</span></div>
+                <span class="title">Cosmic Pants #1</span>
+                <span class="price">$55</span>
+            </div>
+            <div class="card">
+                <div class="image"><span class="text">Street Sweatpants</span></div>
+                <span class="title">Urban Flow</span>
+                <span class="price">$60</span>
+            </div>
+            <div class="card">
+                <div class="image"><span class="text">Colorful Trousers</span></div>
+                <span class="title">Rainbow Pants</span>
+                <span class="price">$58</span>
+            </div>
+            <div class="card">
+                <div class="image"><span class="text">Bold Cargo Pants</span></div>
+                <span class="title">Neon Cargos</span>
+                <span class="price">$62</span>
+            </div>
+        </div>
+
+        <h2 class="items-name" id="hats">Hats</h2>
+        <div class="product-grid">
+            <div class="card">
+                <div class="image"><span class="text">Psychedelic Cap</span></div>
+                <span class="title">Trippy Hat #1</span>
+                <span class="price">$25</span>
+            </div>
+            <div class="card">
+                <div class="image"><span class="text">Street Style Beanie</span></div>
+                <span class="title">Urban Beanie</span>
+                <span class="price">$30</span>
+            </div>
+            <div class="card">
+                <div class="image"><span class="text">Colorful Snapback</span></div>
+                <span class="title">Rainbow Cap</span>
+                <span class="price">$28</span>
+            </div>
+            <div class="card">
+                <div class="image"><span class="text">Bold Bucket Hat</span></div>
+                <span class="title">Neon Bucket</span>
+                <span class="price">$32</span>
+            </div>
+        </div>
+
+        <h2 class="items-name" id="shoes">Shoes</h2>
+        <div class="product-grid">
+            <div class="card">
+                <div class="image"><span class="text">Psychedelic Sneakers</span></div>
+                <span class="title">Trippy Kicks #1</span>
+                <span class="price">$85</span>
+            </div>
+            <div class="card">
+                <div class="image"><span class="text">Street Style Shoes</span></div>
+                <span class="title">Urban Sneakers</span>
+                <span class="price">$90</span>
+            </div>
+            <div class="card">
+                <div class="image"><span class="text">Colorful Runners</span></div>
+                <span class="title">Rainbow Runners</span>
+                <span class="price">$88</span>
+            </div>
+            <div class="card">
+                <div class="image"><span class="text">Bold High-tops</span></div>
+                <span class="title">Neon High-tops</span>
+                <span class="price">$92</span>
+            </div>
+        </div>
     </main>
     
     <!--footer-->
     <footer class="site-footer" aria-label="site footer">
         <div class="footer-trippy">
-            <p>Trippy is a bold and expressive clothing brand that blends psychedelic art with streetwear style to create fashion that turns heads and sparks imagination.</p>
+            <p><a href="">Join Our Community</a><br>
+                Trippy is a bold and expressive clothing brand that blends psychedelic art with streetwear style to create fashion that turns heads and sparks imagination.</p>
         </div>
 
         <div class="icons">
