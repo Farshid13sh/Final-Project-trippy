@@ -32,7 +32,82 @@
         </nav>
 
         <main>
-            <H2></H2>
+            <section class="Product-details">
+                <section class="Product-top">
+                    <div class="Product-top_Name">
+                        <H2>NEW BOX T-SHIRT</H2>
+                        <p>Grey Melange Clean Jersey</p>
+                    </div>
+
+                    <div class="Product-top_Price">
+                        <p>110 CAD</p>
+                    </div>
+                </section>
+
+                <form id="product-form">
+                    <!-- Colors as swatches -->
+                    <fieldset>
+                        <legend>Color</legend>
+                        <!--Grey color option-->
+                        <label>
+                        <input type="radio" name="color" value="grey" checked>
+                        <span class="swatch" style="background-color: grey;"></span> Grey
+                        </label>
+                        <!--White color option-->
+                        <label>
+                        <input type="radio" name="color" value="white" checked>
+                        <span class="swatch" style="background-color: white;"></span> White
+                        </label>
+                        <!--Black color option-->
+                        <label>
+                        <input type="radio" name="color" value="black">
+                        <span class="swatch" style="background-color: black;"></span> Black
+                        </label>
+                    </fieldset>
+
+                    <!-- Size as dropdown -->
+                    <label for="size-select">Size</label>
+                    <select id="size-select" name="size">
+                        <option value="44">44</option>
+                        <option value="46">46</option>
+                        <option value="48">48</option>
+                        <option value="50">50</option>
+                        <option value="52">52</option>
+                        <option value="54">54</option>
+                    </select>
+
+                    <button type="submit">Add to Cart</button>
+                </form>
+
+                <section product-guide-help>
+                    <a href="view size guide">View size guide</a>
+                    <a href="Need help?">Need help?</a>
+                </section>
+
+                <section product-details>
+                    <h3>Details</h3>
+                    <p>Crafted from 100% Portuguese cotton jersey, this t-shirt features 
+                        a wide, boxy fit for a relaxed silhouette. It’s detailed with a 
+                        fine rib collar, overlocked shoulder seams, and a straight hem 
+                        for a clean finish. A subtle TRIPPY logo tab completes the piece, 
+                        adding a signature touch. Style code: M2206NW.</p>
+                </section>
+
+                <section class="product-shipping">
+                    <h3>Shipping</h3>
+                    <p>Free delivery on all orders over €150<br>
+                        Standard Delivery Charge / $15 <br>
+                        Delivered by DHL Express shipment in 2-5 days
+                        *Please note that the delivery charges do not include tax or import duties 
+                        that may be due when the package reaches the country of destination.</p>
+                </section>
+            </section>
+
+        <section class="product-image">
+            <img>
+            <img>
+        </section>
+
 
         </main>
     
