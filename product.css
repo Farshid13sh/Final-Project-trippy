@@ -1,4 +1,4 @@
-/* Grid Layout for Products */
+/* Grid Layout for Products by  */
 .product-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -43,21 +43,21 @@
   margin: 0;
 }
 
-.card::after {
+.card:after {
   content: "Add to Cart";
-  padding-top: 1.25em;
-  padding-left: 1.25em;
+  padding: .25rem;
   position: absolute;
-  left: 0;
+  left: 60%;
   bottom: -60px;
   background: #00AC7C;
   color: #fff;
-  height: 2.5em;
-  width: 90%;
+  height: 2em;
+  width: 45%;
   transition: all 80ms;
   font-weight: 600;
   text-transform: uppercase;
   opacity: 0;
+  font-size: medium;
 }
 
 .card .title {
