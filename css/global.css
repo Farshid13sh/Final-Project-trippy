@@ -205,6 +205,7 @@ main {
 .footer-lists a:hover {
     color: var(--maingreen);
 }
+
 .footer-trippy a{
     text-decoration-line: none;
     color: yellowgreen;
