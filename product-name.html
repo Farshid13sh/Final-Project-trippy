@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a8e7fda755.js" crossorigin="anonymous"></script>
+</head>
 
 <body>
      <!--nav bar-->
@@ -20,127 +20,20 @@
         <!--brand logo-->
         <div class="site-header_logo">
             <h1>Tirppy</h1>
-            <a href="index.html"><img src="images/Trippy-logo-green.png" alt="trippy green logo"></a>
+            <a href="index.html"><img src="images/Trippy-logo-green.png" alt="soma and soil logo"></a>
         </div>
-        <div class="site-header_nav_icon">
-        <button class="hamburger-menu" aria-label="open toggle navigation menu">
-            <i class="fa-solid fa-bars"></i>
-        </button>
         <!--pages link -->
         <nav class="site-header_nav">
             <ul>
+                 <li><a href="index.html"> Home</a></li>
                  <li><a href="product.html">Products</a></li>
                  <li><a href="about.html">About</a></li>
-                 <li><a href="index.html">Home</a></li>
             </ul>
         </nav>
-        <!--icon-->
-        <div class="site-header_icons">
-            <a href="cart.html" aria-label="Shopping Cart"><i class="fa-solid fa-cart-shopping"></i></a>
-            <a href="login.html" aria-label="User Login"><i class="fa-regular fa-user"></i></a>
-        </div>
-        </div>
-    </header>
 
         <main>
-            <section class="product">
-                <aside class="product-details-wrapper">
-                    <!--Title & Price -->
-                    <div class="product-top">
-                        <div class="product-top_Name">
-                            <H2>NEW BOX T-SHIRT</H2>
-                            <p>Grey Melange Clean Jersey</p>
-                        </div>
+            <H2></H2>
 
-                        <div class="product-top_Price">
-                            <p>110 CAD</p>
-                        </div>
-                    </div>
-
-                    <!--Color & Size Options-->
-                    <form id="product-form">
-                        <!-- Colors Options -->
-                        <fieldset class="product-form_color_options">
-                            <legend>Color</legend>
-                            <!--Grey color option-->
-                            <label>
-                            <input type="radio" name="color" value="grey" checked>
-                            <span class="swatch" style="background-color: grey;"></span>
-                            </label>
-                            <!--White color option-->
-                            <label>
-                            <input type="radio" name="color" value="white">
-                            <span class="swatch" style="background-color: var(--white);"></span>
-                            </label>
-                            <!--Black color option-->
-                            <label>
-                            <input type="radio" name="color" value="black">
-                            <span class="swatch" style="background-color: var(--black);"></span>
-                            </label>
-                            <!--Green color option-->
-                            <label>
-                            <input type="radio" name="color" value="green">
-                            <span class="swatch" style="background-color: var(--maingreen);"></span>
-                            </label>
-                        </fieldset>
-
-                        <!-- Size Options -->
-                        <fieldset class="product-form_size_options">
-                            <legend>Size</legend>
-                            <label><input type="radio" name="size" value="44" checked><span class="size-option">44</span></label>
-                            <label><input type="radio" name="size" value="46"><span class="size-option">46</span></label>
-                            <label><input type="radio" name="size" value="48"><span class="size-option">48</span></label>
-                            <label><input type="radio" name="size" value="50"><span class="size-option">50</span></label>
-                            <label><input type="radio" name="size" value="52"><span class="size-option">52</span></label>
-                            <label><input type="radio" name="size" value="54"><span class="size-option">54</span></label>
-                        </fieldset>
-
-                        <button class="atc-button" type="submit">Add to Cart</button>
-                    </form>
-
-                    <!--Size guide and help-->
-                    <div class="product-guide-help">
-                        <a href="view size guide">View size guide</a>
-                        <a href="Need help?">Need help?</a>
-                    </div>
-
-                    <!--Details-->
-                    <div class="product-info">
-                        <h3>Details</h3>
-                        <p>Crafted from 100% Portuguese cotton jersey, this t-shirt features 
-                            a wide, boxy fit for a relaxed silhouette. It’s detailed with a 
-                            fine rib collar,overlocked shoulder seams, and a straight hem 
-                            for a clean finish. A subtle TRIPPY logo tab completes the piece, 
-                            adding a signature touch. <br>Style code: M2206NW.</p>
-                    </div>
-
-                    <div class="product-info">
-                        <h3>Shipping</h3>
-                        <p>Free delivery on all orders over $150<br>
-                            Standard Delivery Charge / $15 <br>
-                            Delivered by DHL Express shipment in 2-5 days<br>
-                            *Please note that the delivery charges do not include tax or import duties 
-                            that may be due when the package reaches the country of destination.</p>
-                    </div>
-                </aside>
-
-                <div class="product-gallery">
-                        <img src="images/T-shirt-model-image/new-box-t-shirt-front.jpg" alt="a closer front shoot of a male model wearing a grey unisex t-shirt with suable white trippy'slogo on the chest area">
-                        <img src="images/T-shirt-model-image/new-box-t-shirt-back-side.jpg" alt="a side shoot of a male model wearing a grey unisex t-shirt with suable white trippy's logo on the chest area">
-                        <img src="images/T-shirt-model-image/new-box-t-shirt-full-front.jpg" alt="a full body front shoot of a male model wearing a grey unisex t-shirt with suable white trippy's logo on the chest area">
-                        <img src="images/T-shirt-model-image/new-box-t-shirt-grey-back.jpg" alt="a full body back shoot of a male model wearing a grey unisex t-shirt with suable white trippy's logo on the chest area">
-                        <img src="images/product-image/new-box-t-shirt-grey.jpg" alt="a product front photo shoot from the top of a grey unisex t-shirt with suable white trippy'slogo on the chest area">
-                </div>
-            </section>
-
-            <!--Explore more section-->
-            <section class="explore-more">
-                <div class="explore-more_title"><h2>EXPLORE MORE</h2></div>
-                <div class="explore-more_item">
-                <a data-name="CLASSIC OG 668" href="product-name.html"><img src="images/product-image/sneaker-grey.jpg" alt="a product shoot of Trippy's Sneakers in grey color in a orange background"></a>
-                <a data-name="UNISEX BALLCAP" href="product-name.html"><img src="images/product-image/hat-light-blue.jpg" alt="a front product shoot of a light blue cap printed with Trippy's white logo in the front center"></a>
-                </div>
-            </section>
         </main>
     
     <!--footer-->
@@ -151,15 +44,6 @@
             <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
         </div>
     </footer>
-
-    <!--JS-->
-    <script>
-        // Toggle navigation menu visibility
-        document.querySelector('.hamburger-menu').addEventListener('click', () => {
-            const nav = document.querySelector('.site-header_nav');
-            nav.classList.toggle('active');
-        });
-    </script>
 </body>
 
 </html>
