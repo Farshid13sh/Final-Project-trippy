@@ -7,13 +7,12 @@
     <title>Trippy Co.</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="css/product.css">
     <!--google-font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/1d9475f72d.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
 <body>
@@ -22,7 +21,6 @@
         <!--brand logo-->
         <div class="site-header_logo">
             <h1>Tirppy</h1>
-
             <a href="index.html"><img src="images/Trippy-logo-green.png" alt="soma and soil logo"></a>
         </div>
         <!--pages link -->
@@ -35,127 +33,26 @@
         </nav>
     </header>
 
-    <section class="product-nav fixed top-20 left-1/2 transform -translate-x-1/2 z-10 bg-white shadow-lg rounded-full px-8 py-3 mt-4">
+    <section class="product-nav">
        <nav class="product-lists">
-            <ul class="flex space-x-8 items-center justify-center">
-                 <li><a href="#T-shirts" class="text-gray-700 hover:text-green-500 font-medium transition-colors duration-300 px-4 py-2 rounded-full hover:bg-green-50">T-shirts</a></li>
-                 <li><a href="#pants" class="text-gray-700 hover:text-green-500 font-medium transition-colors duration-300 px-4 py-2 rounded-full hover:bg-green-50">Pants</a></li>
-                 <li><a href="#hats" class="text-gray-700 hover:text-green-500 font-medium transition-colors duration-300 px-4 py-2 rounded-full hover:bg-green-50">Hats</a></li>
-                 <li><a href="#shoes" class="text-gray-700 hover:text-green-500 font-medium transition-colors duration-300 px-4 py-2 rounded-full hover:bg-green-50">Shoes</a></li>
+            <ul>
+                 <li><a href=""> T-shirts</a></li>
+                 <li><a href="">Pants</a></li>
+                 <li><a href="">Hats</a></li>
+                 <li><a href="">Shoes</a></li>
             </ul>
         </nav>
     </section>
 
-    <main class="pt-40">
-        <div class="flex justify-center">
-            <div class="border-4 border-purple-500 border-solid p-10 m-2 bg-linear-to-r/increasing from-indigo-500 to-teal-400 text-white">
-                <p>Welcome to <b>Trippy</b> where bold colors, mind-bending designs, and streetwear vibes come together to make    every outfit unforgettable.</p>
-            </div>
-        </div>
-        <h2 class="items-name T-shirts" id="T-shirts">T-Shirts</h2>
-        <div class="product-grid">
-            <div class="card">
-                <div class="image">
-                    <img src="images/product-image/new-box-t-shirt-black.jpg" alt="black t-shirt" class="w-full h-full object-cover object-center rounded">
-                </div>
-                <span class="title">Trippy T-shirt Black</span>
-                <span class="price">$40</span>
-            </div>
-            <div class="card">
-                <div class="image"><img src="images/product-image/new-box-t-shirt-grey.jpg" alt="gray t-shirt" class="w-full h-full object-cover object-center rounded"></div>
-                <span class="title">Trippy T-shirt gray</span>
-                <span class="price">$45</span>
-            </div>
-            <div class="card">
-                <div class="image"><img src="images/product-image/new-box-t-shirt-white.jpg" alt="white t-shirt" class="w-full h-full object-cover object-center rounded"></div>
-                <span class="title">Trippy T-shirt white</span>
-                <span class="price">$45</span>
-            </div>
-            <div class="card">
-                <div class="image"><img src="images/product-image/new-box-t-shirt-black.jpg" alt="black t-shirt" class="w-full h-full object-cover object-center rounded"></div>
-                <span class="title">Trippy T-shirt Black</span>
-                <span class="price">$45</span>
-            </div>
-        </div>
-
-        <h2 class="items-name" id="pants">Pants</h2>
-        <div class="product-grid">
-            <div class="card">
-                <div class="image"><img src="images/product-image/pant-black.jpg" alt="black pants" class="w-full h-full object-cover object-center rounded"></div>
-                <span class="title">Trippy Pants Black</span>
-                <span class="price">$65</span>
-            </div>
-            <div class="card">
-                <div class="image"><img src="images/product-image/pant-blue.jpg" alt="blue pants" class="w-full h-full object-cover object-center rounded"></div>
-                <span class="title">Trippy Pants Blue</span>
-                <span class="price">$70</span>
-            </div>
-            <div class="card">
-                <div class="image"><img src="images/product-image/pant-brown.jpg" alt="brown pants" class="w-full h-full object-cover object-center rounded"></div>
-                <span class="title">Trippy Pants brown</span>
-                <span class="price">$70</span>
-            </div>
-            <div class="card">
-                <div class="image"><img src="images/product-image/pant-red.jpg" alt="red pants" class="w-full h-full object-cover object-center rounded"></div>
-                <span class="title">Trippy Pants red</span>
-                <span class="price">$70</span>
-            </div>
-        </div>
-
-        <h2 class="items-name" id="hats">Hats</h2>
-        <div class="product-grid">
-            <div class="card">
-                <div class="image"><img src="images/product-image/hat-pink.jpg" alt="pink hat" class="w-full h-full object-cover object-center rounded"></div>
-                <span class="title">Trippy Hat Pink</span>
-                <span class="price">$25</span>
-            </div>
-            <div class="card">
-                <div class="image"><img src="images/product-image/hat-blue.jpg" alt="blue hat" class="w-full h-full object-cover object-center rounded"></div>
-                <span class="title">Trippy Hat Dark Blue</span>
-                <span class="price">$30</span>
-            </div>
-            <div class="card">
-                <div class="image"><img src="images/product-image/hat-dark-purple.jpg" alt="dar purple hat" class="w-full h-full object-cover object-center rounded"></div>
-                <span class="title">Trippy Hat Purple</span>
-                <span class="price">$30</span>
-            </div>
-            <div class="card">
-                <div class="image"><img src="images/product-image/hat-light-blue.jpg" alt="light blue hat" class="w-full h-full object-cover object-center rounded"></div>
-                <span class="title">Trippy Hat Light Blue</span>
-                <span class="price">$30</span>
-            </div>
-        </div>
-
-        <h2 class="items-name" id="shoes">Shoes</h2>
-        <div class="product-grid">
-            <div class="card">
-                <div class="image"><img src="images/product-image/sneaker-orange.jpg" alt="orange sneakers" class="w-full h-full object-contain object-center rounded"></div>
-                <span class="title">Sneakers Orange</span>
-                <span class="price">$85</span>
-            </div>
-            <div class="card">
-                <div class="image"><img src="images/product-image/sneaker-light-green.jpg" alt="green sneakers" class="w-full h-full object-contain object-center rounded"></div>
-                <span class="title">Sneakers Green</span>
-                <span class="price">$90</span>
-            </div>
-            <div class="card">
-                <div class="image"><img src="images/product-image/sneaker-purple.jpg" alt="purple sneakers" class="w-full h-full object-contain object-center rounded"></div>
-                <span class="title">Sneakers Purple </span>
-                <span class="price">$90</span>
-            </div>
-            <div class="card">
-                <div class="image"><img src="images/product-image/sneaker-blue.jpg" alt="blue sneakers" class="w-full h-full object-contain object-center rounded"></div>
-                <span class="title">Sneaker blue</span>
-                <span class="price">$90</span>
-            </div>
-        </div>
+    <main>
+     
+    
     </main>
     
     <!--footer-->
     <footer class="site-footer" aria-label="site footer">
         <div class="footer-trippy">
-            <p><a href="">Join Our Community</a><br>
-                Trippy is a bold and expressive clothing brand that blends psychedelic art with streetwear style to create fashion that turns heads and sparks imagination.</p>
+            <p>Trippy is a bold and expressive clothing brand that blends psychedelic art with streetwear style to create fashion that turns heads and sparks imagination.</p>
         </div>
 
         <div class="icons">
