@@ -30,85 +30,107 @@
                  <li><a href="about.html">About</a></li>
             </ul>
         </nav>
+    </header>
 
         <main>
-            <section class="Product-details">
-                <section class="Product-top">
-                    <div class="Product-top_Name">
-                        <H2>NEW BOX T-SHIRT</H2>
-                        <p>Grey Melange Clean Jersey</p>
+            <section class="product">
+                <aside class="product-details-wrapper">
+                    <!--Title & Price -->
+                    <div class="product-top">
+                        <div class="product-top_Name">
+                            <H2>NEW BOX T-SHIRT</H2>
+                            <p>Grey Melange Clean Jersey</p>
+                        </div>
+
+                        <div class="product-top_Price">
+                            <p>110 CAD</p>
+                        </div>
                     </div>
 
-                    <div class="Product-top_Price">
-                        <p>110 CAD</p>
+                    <!--Color & Size Options-->
+                    <form id="product-form">
+                        <!-- Colors Options -->
+                        <fieldset class="product-form_color_options">
+                            <legend>Color</legend>
+                            <!--Grey color option-->
+                            <label>
+                            <input type="radio" name="color" value="grey" checked>
+                            <span class="swatch" style="background-color: grey;"></span>
+                            </label>
+                            <!--White color option-->
+                            <label>
+                            <input type="radio" name="color" value="white">
+                            <span class="swatch" style="background-color: var(--white);"></span>
+                            </label>
+                            <!--Black color option-->
+                            <label>
+                            <input type="radio" name="color" value="black">
+                            <span class="swatch" style="background-color: var(--black);"></span>
+                            </label>
+                            <!--Green color option-->
+                            <label>
+                            <input type="radio" name="color" value="green">
+                            <span class="swatch" style="background-color: var(--maingreen);"></span>
+                            </label>
+                        </fieldset>
+
+                        <!-- Size Options -->
+                        <fieldset class="product-form_size_options">
+                            <legend>Size</legend>
+                            <label><input type="radio" name="size" value="44" checked><span class="size-option">44</span></label>
+                            <label><input type="radio" name="size" value="46"><span class="size-option">46</span></label>
+                            <label><input type="radio" name="size" value="48"><span class="size-option">48</span></label>
+                            <label><input type="radio" name="size" value="50"><span class="size-option">50</span></label>
+                            <label><input type="radio" name="size" value="52"><span class="size-option">52</span></label>
+                            <label><input type="radio" name="size" value="54"><span class="size-option">54</span></label>
+                        </fieldset>
+
+                        <button class="atc-button" type="submit">Add to Cart</button>
+                    </form>
+
+                    <!--Size guide and help-->
+                    <div class="product-guide-help">
+                        <a href="view size guide">View size guide</a>
+                        <a href="Need help?">Need help?</a>
                     </div>
-                </section>
 
-                <form id="product-form">
-                    <!-- Colors as swatches -->
-                    <fieldset>
-                        <legend>Color</legend>
-                        <!--Grey color option-->
-                        <label>
-                        <input type="radio" name="color" value="grey" checked>
-                        <span class="swatch" style="background-color: grey;"></span> Grey
-                        </label>
-                        <!--White color option-->
-                        <label>
-                        <input type="radio" name="color" value="white" checked>
-                        <span class="swatch" style="background-color: white;"></span> White
-                        </label>
-                        <!--Black color option-->
-                        <label>
-                        <input type="radio" name="color" value="black">
-                        <span class="swatch" style="background-color: black;"></span> Black
-                        </label>
-                    </fieldset>
+                    <!--Details-->
+                    <div class="product-info">
+                        <h3>Details</h3>
+                        <p>Crafted from 100% Portuguese cotton jersey, this t-shirt features 
+                            a wide, boxy fit for a relaxed silhouette. It’s detailed with a 
+                            fine rib collar, overlocked shoulder seams, and a straight hem 
+                            for a clean finish. A subtle TRIPPY logo tab completes the piece, 
+                            adding a signature touch. <br>Style code: M2206NW.</p>
+                    </div>
 
-                    <!-- Size as dropdown -->
-                    <label for="size-select">Size</label>
-                    <select id="size-select" name="size">
-                        <option value="44">44</option>
-                        <option value="46">46</option>
-                        <option value="48">48</option>
-                        <option value="50">50</option>
-                        <option value="52">52</option>
-                        <option value="54">54</option>
-                    </select>
+                    <div class="product-info">
+                        <h3>Shipping</h3>
+                        <p>Free delivery on all orders over $150<br>
+                            Standard Delivery Charge / $15 <br>
+                            Delivered by DHL Express shipment in 2-5 days<br>
+                            *Please note that the delivery charges do not include tax or import duties 
+                            that may be due when the package reaches the country of destination.</p>
+                    </div>
+                </aside>
 
-                    <button type="submit">Add to Cart</button>
-                </form>
-
-                <section product-guide-help>
-                    <a href="view size guide">View size guide</a>
-                    <a href="Need help?">Need help?</a>
-                </section>
-
-                <section product-details>
-                    <h3>Details</h3>
-                    <p>Crafted from 100% Portuguese cotton jersey, this t-shirt features 
-                        a wide, boxy fit for a relaxed silhouette. It’s detailed with a 
-                        fine rib collar, overlocked shoulder seams, and a straight hem 
-                        for a clean finish. A subtle TRIPPY logo tab completes the piece, 
-                        adding a signature touch. Style code: M2206NW.</p>
-                </section>
-
-                <section class="product-shipping">
-                    <h3>Shipping</h3>
-                    <p>Free delivery on all orders over €150<br>
-                        Standard Delivery Charge / $15 <br>
-                        Delivered by DHL Express shipment in 2-5 days
-                        *Please note that the delivery charges do not include tax or import duties 
-                        that may be due when the package reaches the country of destination.</p>
-                </section>
+                <div class="product-gallery">
+                        <img src="images/T-shirt-model-image/new-box-t-shirt-front.jpg">
+                        <img src="images/T-shirt-model-image/new-box-t-shirt-back-side.jpg">
+                        <img src="images/T-shirt-model-image/new-box-t-shirt-full-front.jpg">
+                        <img src="images/T-shirt-model-image/new-box-t-shirt-grey-back.jpg">
+                        <img src="images/product-image/new-box-t-shirt-grey.jpg">
+                </div>
             </section>
 
-        <section class="product-image">
-            <img>
-            <img>
-        </section>
-
-
+            <!--Explore more section-->
+            <section class="explore-more">
+                <div class="explore-more_title"><h2>EXPLORE MORE</h2></div>
+                <div class="explore-more_item">
+                <a data-name="CLASSIC OG 668" href="product-name.html"><img src="images/product-image/sneaker-grey.jpg"></a>
+                <a data-name="UNISEX BALLCAP" href="product-name.html"><img src="images/product-image/hat-light-blue.jpg"></a>
+                </div>
+            </section>
         </main>
     
     <!--footer-->
