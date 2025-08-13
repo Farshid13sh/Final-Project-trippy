@@ -7,20 +7,23 @@
     <title>Trippy Co.</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/product-name.css">
+    <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="css/index.css">
     <!--google-font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/1d9475f72d.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
+
 
 <body>
 <!--nav bar-->
     <header class="site-header">
         <!--brand logo-->
         <div class="site-header_logo">
-            <h1>Tirppy</h1>
+            <h1>Trippy</h1>
             <a href="index.html"><img src="images/Trippy-logo-green.png" alt="trippy green logo"></a>
         </div>
         <div class="site-header_nav_icon">
@@ -43,38 +46,121 @@
         </div>
     </header>
 
+
     <main>
-        <!-- Your main content will go here -->
-        <div style="height: 80vh; display: flex; align-items: center; justify-content: center;">
-            <h2>Welcome to Trippy Co.</h2>
-        </div>
+        <section class="hero-banner" aria-label="Trippy Collection">
+            <div class="hero-banner_wrap">
+                <h1 class="hero-title">Trippy <br>Collection</h1>
+                <a class="hero-cta" href="product.html">Shop Now →</a>
+            </div>
+        </section>
+
+        <section class="featured-products">
+            <h2 class="items-name">Featured Products</h2>
+            <div class="product-grid">
+                <!-- Row 1 -->
+                <div class="card">
+                    <div class="image">
+                        <img src="images/product-image/new-box-t-shirt-black.jpg" alt="black t-shirt" class="w-full h-full object-cover object-center rounded">
+                    </div>
+                    <span class="title">Trippy T-shirt Black</span>
+                    <span class="price">$40</span>
+                </div>
+                <div class="card">
+                    <div class="image"><img src="images/product-image/new-box-t-shirt-grey.jpg" alt="gray t-shirt" class="w-full h-full object-cover object-center rounded"></div>
+                    <span class="title">Trippy T-shirt Gray</span>
+                    <span class="price">$45</span>
+                </div>
+                <div class="card">
+                    <div class="image"><img src="images/product-image/new-box-t-shirt-white.jpg" alt="white t-shirt" class="w-full h-full object-cover object-center rounded"></div>
+                    <span class="title">Trippy T-shirt White</span>
+                    <span class="price">$45</span>
+                </div>
+                <div class="card">
+                    <div class="image"><img src="images/product-image/pant-black.jpg" alt="black pants" class="w-full h-full object-cover object-center rounded"></div>
+                    <span class="title">Trippy Pants Black</span>
+                    <span class="price">$65</span>
+                </div>
+
+                <!-- Row 2 -->
+                <div class="card">
+                    <div class="image"><img src="images/product-image/pant-blue.jpg" alt="blue pants" class="w-full h-full object-cover object-center rounded"></div>
+                    <span class="title">Trippy Pants Blue</span>
+                    <span class="price">$70</span>
+                </div>
+                <div class="card">
+                    <div class="image"><img src="images/product-image/hat-dark-purple.jpg" alt="purple hat" class="w-full h-full object-cover object-center rounded"></div>
+                    <span class="title">Trippy Hat Purple</span>
+                    <span class="price">$30</span>
+                </div>
+                <div class="card">
+                    <div class="image"><img src="images/product-image/sneaker-purple.jpg" alt="purple sneakers" class="w-full h-full object-contain object-center rounded"></div>
+                    <span class="title">Sneakers Purple</span>
+                    <span class="price">$90</span>
+                </div>
+                <div class="card">
+                    <div class="image"><img src="images/product-image/sneaker-blue.jpg" alt="blue sneakers" class="w-full h-full object-contain object-center rounded"></div>
+                    <span class="title">Sneakers Blue</span>
+                    <span class="price">$90</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="browse-more">
+            <div class="browse-wrap">
+                <h2>Discover More</h2>
+                <p>Check out our full collection of products</p>
+                <a href="product.html" class="browse-cta">Browse All Products →</a>
+            </div>
+        </section>
+
+
     </main>
     
+    
+   
+   
     <!--footer-->
     <footer class="site-footer" aria-label="site footer">
-        <!--Sam-newsletter-->
+        <div class="footer-main">
+            <!--Sam-newsletter-->
+            <div class="footer-left">
+                <section class="newsletter-section">
+                    <h2>Subscribe to our Newsletter</h2>
+                    <p>Get the latest updates and offers from Trippy Co.</p>
+                    <form class="newsletter-form" action="#" method="post">
+                        <div class="input-group">
+                            <input type="email" id="newsletter-email" placeholder="Enter your email" required>
+                            <button type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </section>
+            </div>
 
-        <!-- Social/ Community by Farshid-->
-       <div class="footer-trippy">
-            <p><a href="">Join Our Community</a><br>
-                Trippy is a bold and expressive clothing brand that blends psychedelic art with streetwear style to create fashion that turns heads and sparks imagination.</p>
+            <!-- Social/ Community by Farshid-->
+            <div class="footer-center">
+                <div class="footer-trippy">
+                    <p><a href="">Join Our Community</a><br>
+                        Trippy is a bold and expressive clothing brand that blends psychedelic art with streetwear style to create fashion that turns heads and sparks imagination.</p>
+                </div>
+                <div class="icons">
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
         </div>
 
-        <div class="icons">
-            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+        <!-- Footer Links -->
+        <div class="footer-bottom">
+            <div class="footer-lists">
+                <a href="">Privacy Policy</a>
+                <a href="">Terms of Use</a>
+                <a href="">Site Map</a>
+            </div>
         </div>
-
-        <div class="footer-lists">
-            <a href="">Privacy Policy</a>
-            <a href="">Terms of Use</a>
-            <a href="">Site Map</a>
-        </div>
-        <!--Site Link by Lee-->
-        
     </footer>
-    
+   
     <!--JS-->
     <script>
         // Toggle navigation menu visibility
@@ -85,4 +171,6 @@
     </script>
 </body>
 
+
 </html>
+
