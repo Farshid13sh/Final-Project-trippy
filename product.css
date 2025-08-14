@@ -1,4 +1,4 @@
-/* Grid Layout for Products by  */
+/* Responsive product grid layout using CSS Grid. Adjusts columns based on screen size for optimal display. */
 .product-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -7,26 +7,30 @@
   margin: 0 auto;
   padding: 0 2rem;
 }
+/* This section sets up the main product grid layout, including responsiveness and spacing. */
 
-/* Responsive Grid */
+/* Media query for tablets: reduces grid to 3 columns. */
 @media (max-width: 1024px) {
   .product-grid {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
+/* Media query for small screens: reduces grid to 2 columns. */
 @media (max-width: 768px) {
   .product-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
+/* Media query for mobile devices: single column layout. */
 @media (max-width: 480px) {
   .product-grid {
     grid-template-columns: 1fr;
   }
 }
 
+/* Each product card is a flex container for vertical centering and spacing. The shadow adds depth. */
 .card {
   position: relative;
   width: 100%;
@@ -43,24 +47,10 @@
   margin: 0;
   overflow: hidden;
 }
+/* Styles for each product card, including layout, shadow, and padding. */
 
-/* .card:after {
-  content: "Add to Cart";
-  padding: .25rem;
-  position: absolute;
-  left: 50%;
-  bottom: -60px;
-  background: #00AC7C;
-  color: #fff;
-  height: 2em;
-  width: 47%;
-  transition: all 80ms;
-  font-weight: 600;
-  text-transform: uppercase;
-  opacity: 0;
-  font-size: medium;
-} */
 
+/* Product title is absolutely positioned near the bottom left of the card. */
 .card .title {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 0.9em;
@@ -71,6 +61,7 @@
   color: #000;
 }
 
+/* Product price is absolutely positioned below the title for clear visibility. */
 .card .price {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 0.9em;
@@ -80,6 +71,7 @@
   color: #000;
 }
 
+/* Card hover and active states for interactive feedback. */
 .card:hover::after {
   bottom: 0;
   opacity: 1;
@@ -94,10 +86,12 @@
   height: 3.125em;
 }
 
+/* Utility class for text width control. */
 .text {
   max-width: 55px;
 }
 
+/* Image container for product visuals, centers and fits images. */
 .image {
   width: 100%;
   height: 100%;
@@ -113,6 +107,8 @@
   object-fit: cover;
   object-position: center;
 }
+
+/* Section heading styles for product categories. */
 h2 {
     margin-top: 5rem;
     margin-bottom: 2rem;
@@ -130,7 +126,7 @@ h2 {
     color: #333;
 }
 
-/* Add to Cart Button Styles */
+/* Add to Cart Button Styles: hidden by default, appears on card hover. */
 #add-to-cart {
     position: absolute;
     left: 75%;
@@ -159,6 +155,7 @@ h2 {
     bottom: 0;
     opacity: 1;
 }
+/* Reveals the Add to Cart button when the user hovers over a product card. */
 
 #add-to-cart:hover {
     background: #008f6a;
