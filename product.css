@@ -1,4 +1,17 @@
-/* Grid Layout for Products by  */
+/* ==========================================================================
+   Product Grid Layout
+   ========================================================================== */
+/**
+ * Product Grid Container
+ * - Responsive grid system for displaying products
+ * - Uses CSS Grid with auto-responsive columns
+ * - Maintains consistent spacing and alignment
+ * - Breakpoints:
+ *   * Desktop: 4 columns (default)
+ *   * Tablet L: 3 columns (1024px)
+ *   * Tablet P: 2 columns (768px)
+ *   * Mobile: 1 column (480px)
+ */
 .product-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -27,6 +40,17 @@
   }
 }
 
+/* ==========================================================================
+   Product Card Component
+   ========================================================================== */
+/**
+ * Individual Product Card
+ * - Displays product image, title, price, and add to cart button
+ * - Features hover animations and interactive states
+ * - Uses relative positioning for internal elements
+ * - Includes subtle shadow for depth
+ * - Maintains consistent aspect ratio
+ */
 .card {
   position: relative;
   width: 100%;
@@ -98,6 +122,16 @@
   max-width: 55px;
 }
 
+/* ==========================================================================
+   Product Image Container
+   ========================================================================== */
+/**
+ * Product Image Wrapper
+ * - Centers and constrains product images
+ * - Maintains aspect ratio while filling container
+ * - Uses flexbox for perfect centering
+ * - Handles overflow for varying image sizes
+ */
 .image {
   width: 100%;
   height: 100%;
@@ -130,7 +164,17 @@ h2 {
     color: #333;
 }
 
-/* Add to Cart Button Styles */
+/* ==========================================================================
+   Add to Cart Button
+   ========================================================================== */
+/**
+ * Interactive Add to Cart Button
+ * - Appears on product card hover
+ * - Features smooth slide-up animation
+ * - Includes hover and active states
+ * - Uses brand colors for consistency
+ * - Positioned absolutely within card
+ */
 #add-to-cart {
     position: absolute;
     left: 75%;

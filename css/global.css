@@ -1,20 +1,42 @@
-/*Global Styles */
-:root{
-    /*Color*/
-    --maingreen:#00bf6d;
-    --black:#000000;
-    --white:#FFFFFF;
-    --beige: #eaeaea;
-    --grey: #1e1e1e;
-    --lightgreen: #80e8bb;
+/* ==========================================================================
+   Global Variables and Settings
+   ========================================================================== */
+/**
+ * Root CSS Variables
+ * - Defines the global color palette
+ * - Sets typography system with fallback fonts
+ * - Maintains consistent branding across the site
+ */
+:root {
+    /* Color System
+       - Main brand colors and neutrals
+       - Uses descriptive variable names for clarity
+       - Enables easy theming and dark mode support
+    */
+    --maingreen:#00bf6d;    /* Primary brand color */
+    --black:#000000;        /* Pure black for strong contrast */
+    --white:#FFFFFF;        /* Pure white for backgrounds */
+    --beige: #eaeaea;       /* Light neutral for subtle backgrounds */
+    --grey: #1e1e1e;        /* Dark neutral for text */
+    --lightgreen: #80e8bb;  /* Secondary brand color */
 
-    /*font*/
-    --primaryfont: "Oswald", "Bebas Neue", sans-serif;
-    --secondaryfont:"Open Sans", "Roboto", sans-serif;
-
+    /* Typography System
+       - Defines font stacks with reliable fallbacks
+       - Uses system fonts as final fallback
+    */
+    --primaryfont: "Oswald", "Bebas Neue", sans-serif;      /* For headings */
+    --secondaryfont:"Open Sans", "Roboto", sans-serif;      /* For body text */
 }
 
-/* nav bar */
+/* ==========================================================================
+   Navigation Header
+   ========================================================================== */
+/**
+ * Site Header Component
+ * - Fixed position navigation bar
+ * - Includes logo, navigation menu, and utility icons
+ * - Responsive design with mobile menu support
+ */
 .site-header {
     display: flex;
     justify-content: space-between;
@@ -127,7 +149,15 @@
     cursor: pointer;
 }
 
-/*body*/
+/* ==========================================================================
+   Base Styles
+   ========================================================================== */
+/**
+ * Body Element
+ * - Sets base typography and layout
+ * - Uses flexbox for sticky footer
+ * - Applies consistent text styling
+ */
 body{
     font-family: var(--secondaryfont);
     line-height: 1.5;
@@ -350,7 +380,15 @@ main {
 
 
 
-/* Footer Styles */
+/* ==========================================================================
+   Footer Component
+   ========================================================================== */
+/**
+ * Site Footer
+ * - Three-column layout with logo, navigation, and newsletter
+ * - Includes social media icons and copyright
+ * - Fully responsive with mobile-first approach
+ */
 .site-footer {
     background-color: var(--grey);
     padding: 3rem 0;
@@ -399,7 +437,15 @@ main {
     max-width: 400px;
 }
 
-/* Accecibility*/
+/* ==========================================================================
+   Accessibility Helpers
+   ========================================================================== */
+/**
+ * Screen Reader Only Class
+ * - Visually hides content while keeping it accessible to screen readers
+ * - Follows best practices for accessibility
+ * - Essential for maintaining WCAG compliance
+ */
 .sr-only {
   position: absolute;              
   width: 1px; height: 1px;         
