@@ -1,11 +1,3 @@
-/* ==========================================================================
-   Hero Banner Section
-   ========================================================================== */
-/**
- * Main promotional banner at the top of the homepage
- * Uses full viewport height and centers content both vertically and horizontally
- * margin-top accounts for fixed header height
- */
 .hero-banner {
     height: 80vh;
     background-color: var(--beige);
@@ -51,26 +43,11 @@
     transform: translateY(-2px);
 }
 
-/* ==========================================================================
-   Featured Products Section
-   ========================================================================== */
-/**
- * Displays curated selection of products in a grid layout
- * Matches styling with the main product page for consistency
- */
 .featured-products {
     padding: 4rem 0;
     background: white;
 }
 
-/* Grid Layout
-   ========================================================================== */
-/**
- * Responsive product grid that adapts to screen size:
- * - Desktop: 4 columns
- * - Tablet: 3 columns
- * - Mobile: 1 column
- */
 .product-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -80,7 +57,6 @@
     padding: 0 2rem;
 }
 
-/* Responsive Grid */
 @media screen and (max-width: 600px) {
     .product-grid {
         grid-template-columns: 1fr;
@@ -97,12 +73,6 @@
     }
 }
 
-/**
- * Product Card Component
- * - Displays individual product with image, title, and price
- * - Includes hover effects and "Add to Cart" button
- * - Uses relative positioning for absolute positioned elements
- */
 .card {
     position: relative;
     width: 100%;
@@ -189,12 +159,6 @@
     color: #fff;
 }
 
-/**
- * Product Image Container
- * - Ensures consistent image display across all product cards
- * - Uses flexbox for perfect centering
- * - Maintains aspect ratio while filling container
- */
 .image {
     width: 100%;
     height: 100%;
@@ -204,11 +168,6 @@
     overflow: hidden;
 }
 
-/**
- * Product Image
- * - Covers entire container while maintaining aspect ratio
- * - Centers image content to prevent distortion
- */
 .image img { 
     width: 100%;
     height: 100%;
@@ -216,12 +175,6 @@
     object-position: center;
 }
 
-/**
- * Section Title
- * - Used for product category headings
- * - Provides clear visual hierarchy with large, bold text
- * - Consistent spacing above and below
- */
 .items-name {
     margin-top: 5rem;
     margin-bottom: 2rem;
@@ -231,7 +184,6 @@
     color: #333;
 }
 
-/* Browse More Section */
 .browse-more {
     background: var(--beige);
     padding: 4rem 0;
@@ -273,7 +225,6 @@
     transform: translateY(-2px);
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .hero-banner {
         height: 60vh;
