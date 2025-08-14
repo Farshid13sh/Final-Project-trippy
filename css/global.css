@@ -149,15 +149,7 @@
     cursor: pointer;
 }
 
-/* ==========================================================================
-   Base Styles
-   ========================================================================== */
-/**
- * Body Element
- * - Sets base typography and layout
- * - Uses flexbox for sticky footer
- * - Applies consistent text styling
- */
+/*body*/
 body{
     font-family: var(--secondaryfont);
     line-height: 1.5;
@@ -380,15 +372,7 @@ main {
 
 
 
-/* ==========================================================================
-   Footer Component
-   ========================================================================== */
-/**
- * Site Footer
- * - Three-column layout with logo, navigation, and newsletter
- * - Includes social media icons and copyright
- * - Fully responsive with mobile-first approach
- */
+/* Footer Styles */
 .site-footer {
     background-color: var(--grey);
     padding: 3rem 0;
@@ -437,15 +421,7 @@ main {
     max-width: 400px;
 }
 
-/* ==========================================================================
-   Accessibility Helpers
-   ========================================================================== */
-/**
- * Screen Reader Only Class
- * - Visually hides content while keeping it accessible to screen readers
- * - Follows best practices for accessibility
- * - Essential for maintaining WCAG compliance
- */
+/* Accecibility*/
 .sr-only {
   position: absolute;              
   width: 1px; height: 1px;         
