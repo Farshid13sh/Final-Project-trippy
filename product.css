@@ -1,4 +1,21 @@
-/* Grid Layout for Products by  */
+<<<<<<< HEAD
+/* ==========================================================================
+   Product Grid Layout
+   ========================================================================== */
+/**
+ * Product Grid Container
+ * - Responsive grid system for displaying products
+ * - Uses CSS Grid with auto-responsive columns
+ * - Maintains consistent spacing and alignment
+ * - Breakpoints:
+ *   * Desktop: 4 columns (default)
+ *   * Tablet L: 3 columns (1024px)
+ *   * Tablet P: 2 columns (768px)
+ *   * Mobile: 1 column (480px)
+ */
+=======
+/* Responsive product grid layout using CSS Grid. Adjusts columns based on screen size for optimal display. */
+>>>>>>> dev
 .product-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -7,26 +24,41 @@
   margin: 0 auto;
   padding: 0 2rem;
 }
+/* This section sets up the main product grid layout, including responsiveness and spacing. */
 
-/* Responsive Grid */
-@media (max-width: 1024px) {
-  .product-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media (max-width: 768px) {
-  .product-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 480px) {
+/* Media query for mobile devices: single column layout. */
+@media screen and (max-width: 600px) {
   .product-grid {
     grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 0 1rem;
   }
 }
 
+<<<<<<< HEAD
+/* ==========================================================================
+   Product Card Component
+   ========================================================================== */
+/**
+ * Individual Product Card
+ * - Displays product image, title, price, and add to cart button
+ * - Features hover animations and interactive states
+ * - Uses relative positioning for internal elements
+ * - Includes subtle shadow for depth
+ * - Maintains consistent aspect ratio
+ */
+=======
+/* Media query for tablets: reduces grid to 2 columns. */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+    padding: 0 1.5rem;
+  }
+}
+
+/* Each product card is a flex container for vertical centering and spacing. The shadow adds depth. */
+>>>>>>> dev
 .card {
   position: relative;
   width: 100%;
@@ -43,24 +75,10 @@
   margin: 0;
   overflow: hidden;
 }
+/* Styles for each product card, including layout, shadow, and padding. */
 
-/* .card:after {
-  content: "Add to Cart";
-  padding: .25rem;
-  position: absolute;
-  left: 50%;
-  bottom: -60px;
-  background: #00AC7C;
-  color: #fff;
-  height: 2em;
-  width: 47%;
-  transition: all 80ms;
-  font-weight: 600;
-  text-transform: uppercase;
-  opacity: 0;
-  font-size: medium;
-} */
 
+/* Product title is absolutely positioned near the bottom left of the card. */
 .card .title {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 0.9em;
@@ -71,6 +89,7 @@
   color: #000;
 }
 
+/* Product price is absolutely positioned below the title for clear visibility. */
 .card .price {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 0.9em;
@@ -80,6 +99,7 @@
   color: #000;
 }
 
+/* Card hover and active states for interactive feedback. */
 .card:hover::after {
   bottom: 0;
   opacity: 1;
@@ -94,10 +114,25 @@
   height: 3.125em;
 }
 
+/* Utility class for text width control. */
 .text {
   max-width: 55px;
 }
 
+<<<<<<< HEAD
+/* ==========================================================================
+   Product Image Container
+   ========================================================================== */
+/**
+ * Product Image Wrapper
+ * - Centers and constrains product images
+ * - Maintains aspect ratio while filling container
+ * - Uses flexbox for perfect centering
+ * - Handles overflow for varying image sizes
+ */
+=======
+/* Image container for product visuals, centers and fits images. */
+>>>>>>> dev
 .image {
   width: 100%;
   height: 100%;
@@ -113,6 +148,8 @@
   object-fit: cover;
   object-position: center;
 }
+
+/* Section heading styles for product categories. */
 h2 {
     margin-top: 5rem;
     margin-bottom: 2rem;
@@ -130,7 +167,21 @@ h2 {
     color: #333;
 }
 
-/* Add to Cart Button Styles */
+<<<<<<< HEAD
+/* ==========================================================================
+   Add to Cart Button
+   ========================================================================== */
+/**
+ * Interactive Add to Cart Button
+ * - Appears on product card hover
+ * - Features smooth slide-up animation
+ * - Includes hover and active states
+ * - Uses brand colors for consistency
+ * - Positioned absolutely within card
+ */
+=======
+/* Add to Cart Button Styles: hidden by default, appears on card hover. */
+>>>>>>> dev
 #add-to-cart {
     position: absolute;
     left: 75%;
@@ -159,6 +210,7 @@ h2 {
     bottom: 0;
     opacity: 1;
 }
+/* Reveals the Add to Cart button when the user hovers over a product card. */
 
 #add-to-cart:hover {
     background: #008f6a;
