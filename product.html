@@ -1,38 +1,34 @@
-<!-- Developer: Farshid -->
-<!-- Main HTML document for Trippy Co. product page -->
+<!--Developer: Farshid-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Meta tags for character set and responsive design -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trippy Co.</title>
-    <!-- Linking CSS files for reset, global styles, and product-specific styles -->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="product.css">
-    <!-- Google Fonts for custom typography -->
+    <!--google-font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <!-- Font Awesome and Tailwind for icons and utility classes -->
     <script src="https://kit.fontawesome.com/1d9475f72d.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
+
 <body>
-<!-- Site header contains logo, navigation, and user/cart icons -->
+<!--nav bar-->
     <header class="site-header">
-        <!-- Brand logo and homepage link -->
+        <!--brand logo-->
         <div class="site-header_logo">
             <h1>Tirppy</h1>
             <a href="index.html"><img src="images/Trippy-logo-green.png" alt="trippy green logo"></a>
         </div>
-        <!-- Navigation menu and icons for cart/user -->
         <div class="site-header_nav_icon">
         <button class="hamburger-menu" aria-label="open toggle navigation menu">
             <i class="fa-solid fa-bars"></i>
         </button>
-        <!-- Main navigation links for site pages -->
+        <!--pages link -->
         <nav class="site-header_nav">
             <ul>
                  <li><a href="product.html">Products</a></li>
@@ -40,7 +36,7 @@
                  <li><a href="index.html">Home</a></li>
             </ul>
         </nav>
-        <!-- Shopping cart and user login icons -->
+        <!--icon-->
         <div class="site-header_icons">
             <a href="cart.html" aria-label="Shopping Cart"><i class="fa-solid fa-cart-shopping"></i></a>
             <a href="login.html" aria-label="User Login"><i class="fa-regular fa-user"></i></a>
@@ -48,7 +44,6 @@
         </div>
     </header>
 
-    <!-- Section for product category navigation -->
     <section class="product-nav fixed top-20 left-1/2 transform -translate-x-1/2 z-10 bg-white shadow-lg rounded-full px-8 py-3 mt-4">
        <nav class="product-lists">
             <ul class="flex space-x-8 items-center justify-center">
@@ -58,7 +53,6 @@
                  <li><a href="#shoes" class="text-gray-700 hover:text-green-500 font-medium transition-colors duration-300 px-4 py-2 rounded-full hover:bg-green-50">Shoes</a></li>
             </ul>
         </nav>
-        <!-- Quick navigation for product categories -->
     </section>
 
     <main class="pt-40">
@@ -67,7 +61,6 @@
                 <p>Welcome to <b>Trippy</b> where bold colors, mind-bending designs, and streetwear vibes come together to make    every outfit unforgettable.</p>
             </div>
         </div>
-        <!-- T-Shirts section -->
         <h2 class="items-name T-shirts" id="T-shirts">T-Shirts</h2>
         <div class="product-grid">
             <div class="card">
@@ -98,7 +91,6 @@
             </div>
         </div>
 
-        <!-- Pants section -->
         <h2 class="items-name" id="pants">Pants</h2>
         <div class="product-grid">
             <div class="card">
@@ -127,7 +119,6 @@
             </div>
         </div>
 
-        <!-- Hats section -->
         <h2 class="items-name" id="hats">Hats</h2>
         <div class="product-grid">
             <div class="card">
@@ -156,7 +147,6 @@
             </div>
         </div>
 
-        <!-- Shoes section -->
         <h2 class="items-name" id="shoes">Shoes</h2>
         <div class="product-grid">
             <div class="card">
@@ -188,42 +178,21 @@
     
     <!--footer-->
     <footer class="site-footer" aria-label="site footer">
-        <div class="footer-main">
-            <!--Sam-newsletter-->
-            <div class="footer-left">
-                <section class="newsletter-section">
-                    <h2>Subscribe to our Newsletter</h2>
-                    <p>Get the latest updates and offers from Trippy Co.</p>
-                    <form class="newsletter-form" action="#" method="post">
-                        <div class="input-group">
-                            <input type="email" id="newsletter-email" placeholder="Enter your email" required>
-                            <button type="submit">Subscribe</button>
-                        </div>
-                    </form>
-                </section>
-            </div>
-
-            <!-- Social/ Community by Farshid-->
-            <div class="footer-center">
-                <div class="footer-trippy">
-                    <p><a href="">Join Our Community</a><br>
-                        Trippy is a bold and expressive clothing brand that blends psychedelic art with streetwear style to create fashion that turns heads and sparks imagination.</p>
-                </div>
-                <div class="icons">
-                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
-                </div>
-            </div>
+        <div class="footer-trippy">
+            <p><a href="">Join Our Community</a><br>
+                Trippy is a bold and expressive clothing brand that blends psychedelic art with streetwear style to create fashion that turns heads and sparks imagination.</p>
         </div>
 
-        <!-- Footer Links -->
-        <div class="footer-bottom">
-            <div class="footer-lists">
-                <a href="">Privacy Policy</a>
-                <a href="">Terms of Use</a>
-                <a href="">Site Map</a>
-            </div>
+        <div class="icons">
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+
+        <div class="footer-lists">
+            <a href="">Privacy Policy</a>
+            <a href="">Terms of Use</a>
+            <a href="">Site Map</a>
         </div>
     </footer>
 
