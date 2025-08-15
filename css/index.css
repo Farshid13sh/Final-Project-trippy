@@ -3,9 +3,10 @@
     background-color: var(--beige);
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     margin-top: 80px;
-    text-align: center;
+    text-align: left;
+    padding-left: 4rem;
 }
 
 .hero-banner h1 {
@@ -14,7 +15,7 @@
 }
 
 .hero-banner_wrap {
-    max-width: 800px;
+    max-width: 600px;
     padding: 2rem;
 }
 
@@ -57,20 +58,15 @@
     padding: 0 2rem;
 }
 
-@media screen and (max-width: 600px) {
-    .product-grid {
-        grid-template-columns: 1fr;
-        gap: 1rem;
-        padding: 0 1rem;
-    }
+/* Card link wrapper to make entire card clickable */
+.card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
 }
 
-@media screen and (min-width: 601px) and (max-width: 1024px) {
-    .product-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1.25rem;
-        padding: 0 1.5rem;
-    }
+.card-link:hover {
+    text-decoration: none;
 }
 
 .card {
@@ -225,9 +221,28 @@
     transform: translateY(-2px);
 }
 
-@media (max-width: 768px) {
+/* ===== MEDIA QUERIES ===== */
+
+/* Mobile Styles */
+@media screen and (max-width: 600px) {
+    /* Product Grid */
+    .product-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 0 1rem;
+    }
+
+    /* Hero Banner */
     .hero-banner {
         height: 60vh;
+        padding-left: 2rem;
+        justify-content: flex-start;
+        text-align: left;
+    }
+
+    .hero-banner_wrap {
+        max-width: 100%;
+        padding: 1rem;
     }
 
     .hero-title {
@@ -236,5 +251,36 @@
 
     .browse-more h2 {
         font-size: 2rem;
+    }
+}
+
+/* Tablet Styles */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    /* Product Grid */
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.25rem;
+        padding: 0 1.5rem;
+    }
+
+    /* Hero Banner */
+    .hero-banner {
+        height: 70vh;
+        padding-left: 3rem;
+        justify-content: flex-start;
+        text-align: left;
+    }
+
+    .hero-banner_wrap {
+        max-width: 500px;
+        padding: 1.5rem;
+    }
+
+    .hero-title {
+        font-size: clamp(2.5rem, 5.5vw, 4rem);
+    }
+
+    .browse-more h2 {
+        font-size: 2.2rem;
     }
 }
