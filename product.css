@@ -8,23 +8,6 @@
   padding: 0 2rem;
 }
 
-/* Responsive Grid */
-@media screen and (max-width: 600px) {
-  .product-grid {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-    padding: 0 1rem;
-  }
-}
-
-@media screen and (min-width: 601px) and (max-width: 1024px) {
-  .product-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.25rem;
-    padding: 0 1.5rem;
-  }
-}
-
 .card {
   position: relative;
   width: 100%;
@@ -150,6 +133,26 @@ h2 {
 #add-to-cart:active {
     transform: translateX(-50%) scale(0.95);
     background: #006b52;
+}
+
+/* ===== MEDIA QUERIES ===== */
+
+/* Mobile Styles */
+@media screen and (max-width: 600px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 0 1rem;
+  }
+}
+
+/* Tablet Styles */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+    padding: 0 1.5rem;
+  }
 }
 
 
