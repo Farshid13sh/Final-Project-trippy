@@ -74,6 +74,17 @@
     }
 }
 
+/* Card link wrapper to make entire card clickable */
+.card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.card-link:hover {
+    text-decoration: none;
+}
+
 .card {
     position: relative;
     width: 100%;
