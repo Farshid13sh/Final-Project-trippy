@@ -10,3 +10,4 @@
 - Samuel Montoya
 
 **Repository:** https://github.com/Farshid13sh/Final-Project-trippy.git
+**Deployed**https://farshid13sh.github.io/Final-Project-trippy/
