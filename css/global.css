@@ -515,7 +515,7 @@ main {
 
 
 /* Responsive Footer */
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 601px) and (max-width: 1024px) {
     .footer-main {
         display: flex;
         flex-direction: column;
@@ -552,7 +552,6 @@ main {
         max-width: 300px;
     }
 }
-
 
 .site-footer .icons {
     display: flex;
